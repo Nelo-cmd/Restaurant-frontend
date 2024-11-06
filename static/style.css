@@ -111,66 +111,6 @@ nav{
 
 /* page 2 */
 
-html, body{
-    padding: 0;
-    margin: 0;
-    background: white;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    height: 100vh;
-}
-
-nav{
-    position: fixed;
-    z-index: 400;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    height: 10vh;
-    width: 100vw;
-    box-shadow: 0px 0px 4px black;
-    font-size:x-large;
-    font-weight: 500;
-}
-
-.restaurant-logo{
-    display: flex;
-    justify-content: center;
-    width: 50vw;
-    border-width: 5px;
-    color: grey;
-}
-
-.restaurant-logo:hover, .restaurant-logo:active{
-    color: rgb(52, 139, 52);
-}
-
-.navlinks{
-    width: 50vw;
-}
-
-.navlinks ul{
-    display:inline-flex;
-    align-items: center;
-    list-style: none;
-    width:80%;
-    padding: 0%;
-}
-
-.navlinks li{
-    width:50%;
-}
-
-.navlinks ul li a{
-    text-decoration: none;
-    color: grey;
-}
-
-.navlinks ul li a:hover, .navlinks ul li a:active{
-    color: rgb(52, 139, 52);
-    font-size: large;
-}
-
 .page-2-body{
     display: inline-flex;
     align-items:center;
@@ -235,67 +175,6 @@ nav{
 
 
 /* page 3 */
-
-html, body{
-    padding: 0;
-    margin: 0;
-    background: white;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    height: 100vh;
-}
-
-nav{
-    margin: 0;
-    position: fixed;
-    z-index: 400;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    height: 10vh;
-    width: 100vw;
-    box-shadow: 0px 0px 4px black;
-    font-size:x-large;
-    font-weight: 500;
-}
-
-.restaurant-logo{
-    display: flex;
-    justify-content: center;
-    width: 50vw;
-    border-width: 5px;
-    color: grey;
-}
-
-.restaurant-logo:hover, .restaurant-logo:active{
-    color: rgb(52, 139, 52);
-}
-
-.navlinks{
-    width: 50vw;
-}
-
-.navlinks ul{
-    display:inline-flex;
-    align-items: center;
-    list-style: none;
-    width:80%;
-    padding: 0%;
-}
-
-.navlinks li{
-    width:50%;
-}
-
-.navlinks ul li a{
-    text-decoration: none;
-    color: grey;
-}
-
-.navlinks ul li a:hover, .navlinks ul li a:active{
-    color: rgb(52, 139, 52);
-    font-size: large;
-}
 
 .page-3-body{
     height: 70vh;
