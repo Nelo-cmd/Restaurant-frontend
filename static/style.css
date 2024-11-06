@@ -424,3 +424,80 @@ margin-bottom: 0px;
     color: grey;
 }
 
+/* Page 5 */
+.flex-container-1{
+    width: 100vw;
+    height: 50vh;
+    display: Flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us{
+    width: 40%;
+    height: 90%;
+    position: relative;
+    top: 15%;
+    right: 10%;
+}
+
+.contact-us h3{
+    color: rgb(52, 139, 52);
+}
+
+.contact-us h4{
+    color: grey;
+}
+
+.contact-us h1{
+    font-size: 3rem;
+}
+
+.contact-button{
+    position: relative;
+    top: 10%;
+}
+
+.contact-button a{
+    text-decoration-line : none !important;
+    text-decoration-color: white !important;
+    font-size: large;
+    max-width: fit-content;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(52, 139, 52);
+    border-radius: 8px;
+}
+
+.contact-button a:hover{
+    background-color: rgb(17, 85, 42)
+}
+
+.flex-container-2{
+    margin-top: 10%;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10%;
+}
+.socials img{
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 6px;
+}
+
+.socials h2{
+    color: rgb(52, 139, 52);
+}
+
+.socials, .services, .information, .address{
+    display: block;
+    justify-self: center;
+}
+
+.socials h3, .services h3, .information h3, .address h3{
+    color: grey;
+}
