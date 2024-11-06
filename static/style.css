@@ -30,7 +30,7 @@ nav{
     color: grey;
 }
 
-.restaurant-logo:hover, .restaurant-logo:active{
+.restaurant-logo:hover, .restaurant-logo:active .restaurant-logo:visited{
     color: rgb(52, 139, 52);
 }
 
