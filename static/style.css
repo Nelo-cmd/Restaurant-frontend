@@ -11,6 +11,38 @@ html, body{
     background: white;
     font-family: 'Times New Roman', Times, serif;
     color: black;
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeinout { 
+    0%{
+        opacity: 0;
+        transform: translateY(5vh);
+
+}
+
+    100%{
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+    
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+ 
+.section:target{
+    animation-name: fadeinout;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-duration: 2s;
 }
 
 nav{
@@ -42,6 +74,14 @@ nav{
     width: 50vw;
 }
 
+.hamburger{
+    display: none;
+}
+
+.close-x{
+    display: none;
+}
+
 .navlinks ul{
     display:inline-flex;
     align-items: center;
@@ -59,7 +99,7 @@ nav{
     color: grey;
 }
 
-.navlinks ul li a:hover, .navlinks ul li a:active, .navlinks ul li a:visited{
+.navlinks ul li a:hover, .navlinks ul li a:active{
     color: rgb(52, 139, 52);
     font-size: large;
 }
@@ -404,4 +444,49 @@ margin-bottom: 0px;
 
 .socials h3, .services h3, .information h3, .address h3{
     color: grey;
+}
+
+
+@media only screen and (min-width:800px) and (max-width: 1200px) {
+
+    .navlinks{
+        display: grid;
+        justify-content: right;
+        padding-right: 10%;
+    }
+
+    #toggle{
+        display: none;
+        background-color: rgba(3, 3, 3, 0.616) ;
+        justify-content: center;
+        padding: 15%;
+        margin: 0px;
+        animation-name: fadein;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-duration: 2s;
+        box-sizing: content-box;
+        position: relative;
+        top: 20%;
+        width: 150%;
+    }
+
+    #toggle a{
+        color: white;
+        justify-self: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .close-x{
+        display: none;
+        height: 30px;
+        width: 30px;
+        justify-self: right;
+        padding-right: 10%;
+    }
+
+    #toggle:target,.hamburger{
+        display: grid;
+    }
 }
