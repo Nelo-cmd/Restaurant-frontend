@@ -642,7 +642,205 @@ margin-bottom: 0px;
         height: 70px;
     }
 
+    .grid-container{
+        gap: 15%;
+    }
+
     #section-4{
+        height: 300vh;
+    }
+
+    .flex-container{
+        height: 100%;
+        width: 50% !important;
+        display: grid;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5%;
+    }
+    
+    .food-item{
+        height: 100%;
+        width: 50vw;
+        padding-bottom: 5%;
+        display: grid;
+        border-radius: 3%;
+        box-shadow: 0px 1px 2px gray;
+    }
+    
+    .food-item img{
+        height: 70%;
+        width: 70%;
+        margin-top: 10px;
+        display: grid;
+        justify-self: center;
+    }
+    
+    .flex-container-2{
+        margin-top: 10%;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        align-items: start;
+        justify-content: start;
+        gap: 5%;
+    }
+    
+    .address{
+        padding-left:20%;
+    }
+}
+
+@media only screen and (min-width:300px) and ( max-width: 499px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    Nav{
+        align-items: start;
+        padding-top: 8%;
+        height: 8%;
+        width: 100vw;
+    }
+
+    .navlinks{
+        display: grid;
+        justify-content: right;
+        padding-right: 10%;
+    }
+
+    #toggle{
+        display: none;
+        background-color: rgba(3, 3, 3, 0.616) ;
+        justify-content: center;
+        justify-self: end;
+        padding: 10%;
+        margin: 0px;
+        animation-name: fadein;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-duration: 2s;
+        box-sizing: content-box;
+        position: relative;
+        top: 0%;
+        width: 150%;
+    }
+
+    #toggle a{
+        color: white;
+        justify-self: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .close-x{
+        display: none;
+        height: 30px;
+        width: 30px;
+        justify-self: right;
+        padding-right: 10%;
+    }
+
+    #toggle:target,.hamburger{
+        display: grid;
+    }
+    #section-1{
+        height: 65vh;
+    }
+    .page-1-body{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        margin-top: 0px;
+        padding-top: 15%;
+    }
+    .left-div{
+        display: grid;
+        position: relative;
+        left: 0%;
+        height: 50%;
+        width: 80vw;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .left-div h1{
+        margin: 10px 0px;
+        font-size: 15vw;
+        color: rgb(52, 139, 52);
+    }
+    
+    .left-div h3{
+        font-size: 8vw;
+    }
+    
+    .menu-button:hover{
+        background-color: rgb(17, 85, 42)
+    }
+    
+    .right-div{
+        display: none;
+        height: 0;
+        width: 0;
+    }
+
+
+    .page-2-body{
+        display: block;
+        align-items:center;
+        justify-content: center;
+    }
+    
+    .page-2-left-div{
+        align-items: center;
+        justify-self: center;
+        height: 50%;
+        width:80%;
+    }
+    
+    .page-2-left-div img{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        height: 80%;
+        width: 100%;
+    }
+    
+    .page-2-right-div{
+        display: block;
+        position: relative;
+        align-items: center;
+        justify-self: center;
+        height: 50%;
+        width: calc((80/100) * 100vw);
+    }
+    
+    #section-3{
+        display: none;
+        height: 0vh;
+        align-items: center;
+    }
+
+    .service-container{
+        height: 60%;
+        width: 100%;
+    }
+    
+    .excellent-food, .fast-food, .delivery{
+        height: 60%;
+        width: 30%;
+    }
+    
+    .excellent-food img, .fast-food img, .delivery img{
+        justify-self: center;
+        width: 50%;
+        height: 70px;
+    }
+
+    #section-4{
+        padding-top: 40%;
         height: 220vh;
     }
 
@@ -677,7 +875,7 @@ margin-bottom: 0px;
     }
     
     .flex-container-2{
-        margin-top: 10%;
+        margin-top: 0%;
         width: 100vw;
         height: 50vh;
         display: grid;
@@ -688,5 +886,40 @@ margin-bottom: 0px;
     
     .address{
         padding-left:20%;
+    }
+
+    .flex-container-1{
+        width: 100vw;
+        height: 55vh;
+        display: block;
+        justify-content: space-around;
+        align-items: start;
+        position: relative;
+        top: 10%;
+        right: 0%;
+    }
+    .contact-us{
+        padding: 5%;
+        width: 100%;
+        height: 50%;
+        position: relative;
+        top: 0%;
+        right: 0%;
+        box-sizing: content-box;
+    }
+
+    .contact-us h1{
+        margin-bottom: 0px;
+    }
+
+    .contact-us h4{
+        margin: 0px;
+    }
+
+    .contact-button{
+        margin-left: 20px;
+        height: 20%;
+        position: relative;
+        top: 0%;
     }
 }
